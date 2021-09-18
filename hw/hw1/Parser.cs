@@ -5,9 +5,9 @@ using System.Text;
 
 namespace hw1
 {
-    class Parser
+    public static class Parser
     {
-        private static readonly List<string> availableOperation = new List<string>{ "+", "-", "*", "/", };
+        private static readonly List<string> AvailableOperation = new List<string>{ "+", "-", "*", "/", };
 
         public static int TryParseValues(string[] args, out int arg1, out int arg2, out string op)
         {
@@ -20,7 +20,7 @@ namespace hw1
                 return 1;
             }
 
-            if (!availableOperation.Contains(op))
+            if (!AvailableOperation.Contains(op))
             {
                 Console.WriteLine($"{args[0]} {args[1]} {args[2]} Incorrect arguments ");
                 return 2;
