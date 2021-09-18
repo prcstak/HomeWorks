@@ -18,5 +18,14 @@ namespace hw1.tests
             Assert.Equal(expect, act);
         }
 
+        [Theory]
+        [InlineData("b", 2, 2, 0)]
+        [InlineData("", 3, 3, 0)]
+        public static void CalculateTest_result0(string op, int arg1, int arg2, int expect)
+        {
+            var act = Calculator.Calculate(op, arg1, arg2);
+
+            Assert.Equal(expect, act);
+        }
     }
 }
