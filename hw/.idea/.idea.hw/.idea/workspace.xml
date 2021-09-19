@@ -4,9 +4,7 @@
     <projectFile profileName="hw1">hw1/hw1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80e2fa80-8c04-4633-af9b-a264780bba7c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hw/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="80e2fa80-8c04-4633-af9b-a264780bba7c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +70,7 @@
       <updated>1631965321917</updated>
       <workItem from="1631965335000" duration="4973000" />
       <workItem from="1631972493615" duration="2678000" />
-      <workItem from="1632043274868" duration="1355000" />
+      <workItem from="1632043274868" duration="1988000" />
     </task>
     <task id="LOCAL-00001" summary="Add tests">
       <created>1631972290820</created>
