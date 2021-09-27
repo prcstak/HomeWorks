@@ -1,13 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
+using IL;
 
-namespace hw2
+namespace Homework1
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine(IL.Class.Square(8, 2));
+            /*var parserResult = Parser.TryParseValues(args, out var arg1, out var arg2, out var op);
+
+            if (parserResult != 0)
+            {
+                return parserResult;
+            }
+
+            var result = Calculator.Calculate(args[1], arg1, arg2);*/
+            var result = Calculator.Calculate("-", 10, 2);
+            //Console.Write($"{arg1} {op} {arg2} = {result}");
+            Console.Write($"{10} op {2} = {result}");
+            return 0;
+            
         }
     }
 }
