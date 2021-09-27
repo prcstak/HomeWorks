@@ -16,22 +16,22 @@
         
     ldarg.0
     ldstr "+"
-    ceq
+    call bool System.String::op_Equality(string, string)
     brtrue plus
     
     ldarg.0
     ldstr "*"
-    ceq
+    call bool System.String::op_Equality(string, string)
     brtrue mult
     
     ldarg.0
     ldstr "-"
-    ceq
+    call bool System.String::op_Equality(string, string)
     brtrue subs
     
     ldarg.0
     ldstr "/"
-    ceq
+    call bool System.String::op_Equality(string, string)
     brtrue divide
     
     ldc.i4.0
