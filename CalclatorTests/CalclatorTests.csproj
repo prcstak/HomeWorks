@@ -20,6 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Calclator\Calclator.csproj" />
       <ProjectReference Include="..\Calculator\Calculator.fsproj" />
     </ItemGroup>
 

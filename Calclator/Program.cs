@@ -3,9 +3,9 @@ using Calc;
 
 namespace Calclator
 {
-    class Program
+    public class Program
     {
-        static int Main(string[] args)
+        public static int Main(string[] args)
         {
             var parseResult = Parser.TryParseValues(args, out var val1, out var val2, out var operation);
             
@@ -14,7 +14,7 @@ namespace Calclator
                 return parseResult;
             }
 
-            var result = Calculator.Calculate(val1, val2, operation);
+            var result = Calculator.Calculate( operation, val1, val2);
             Console.WriteLine($"{args[0]} {args[1]} {args[2]} = {result}");
             return 0;
         }

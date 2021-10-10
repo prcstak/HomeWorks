@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="57" TotalStatements="57" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2021.2.1">
+  <FileIndices>
+    <File Index="11" Name="D:\DataStorage_\Programs_\.net\HomeWorks\CalclatorTests\obj\Debug\net5.0\CalclatorTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="DB49449CE68B25A1210FED134DCB808124445FE400C7C1EECE5D0D81F7D6755D" />
+    <File Index="1" Name="D:\DataStorage_\Programs_\.net\HomeWorks\CalclatorTests\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="2" Name="C:\Users\Marsel\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="3" Name="D:\DataStorage_\Programs_\.net\HomeWorks\CalclatorTests\ParserTests.cs" ChecksumAlgorithm="SHA256" Checksum="3829A5C48D746CDBBAE8B787DFDC5EA027C0208A045351BA4C64B6469FA71CA0" />
+    <File Index="4" Name="D:\DataStorage_\Programs_\.net\HomeWorks\CalclatorTests\MainTests.cs" ChecksumAlgorithm="SHA256" Checksum="CD468AC1D9BFA4F2E361DABCF4ABF13862E8EF1037106B3F646DD9BA0BE6525E" />
+    <File Index="6" Name="D:\DataStorage_\Programs_\.net\HomeWorks\Calculator\Parser.fs" ChecksumAlgorithm="SHA256" Checksum="DEEDA255FF405DC8F1DDFE32055B5403BD6BFA8C04DA6F66BE002A08C06D5F90" />
+    <File Index="7" Name="D:\DataStorage_\Programs_\.net\HomeWorks\Calculator\Calculate.fs" ChecksumAlgorithm="SHA256" Checksum="3E8FD040254D533677D33D46DF55BB37B13DA05F0336A63D7210AA110B2CD0EB" />
+    <File Index="10" Name="D:\DataStorage_\Programs_\.net\HomeWorks\Calclator\obj\Debug\net5.0\Calclator.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="2CA6DA49ABDCB2DC411A9664C1DD17126BE40ACA3E56A4D163A9175D5A102E92" />
+    <File Index="9" Name="D:\DataStorage_\Programs_\.net\HomeWorks\Calclator\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="8" Name="D:\DataStorage_\Programs_\.net\HomeWorks\Calclator\Program.cs" ChecksumAlgorithm="SHA256" Checksum="DA195949978F410DFCB5AD5C562E605B498819657C6AE110E604A98EF8BB0B17" />
+    <File Index="5" Name="D:\DataStorage_\Programs_\.net\HomeWorks\CalclatorTests\CalculateTests.cs" ChecksumAlgorithm="SHA256" Checksum="4BEAD547834239C8B4605EA8FBC23EAB8F056158159BDDAED43E749B4209FC39" />
+  </FileIndices>
+  <Assembly Name="Calclator" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+    <Namespace Name="Calclator" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+      <Type Name="Program" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+        <Method Name="Main(System.String[]):System.Int32" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="8" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="10" Column="13" EndLine="10" EndColumn="106" Covered="True" />
+          <Statement FileIndex="8" Line="12" Column="13" EndLine="12" EndColumn="34" Covered="True" />
+          <Statement FileIndex="8" Line="13" Column="13" EndLine="13" EndColumn="14" Covered="True" />
+          <Statement FileIndex="8" Line="14" Column="17" EndLine="14" EndColumn="36" Covered="True" />
+          <Statement FileIndex="8" Line="17" Column="13" EndLine="17" EndColumn="71" Covered="True" />
+          <Statement FileIndex="8" Line="18" Column="13" EndLine="18" EndColumn="76" Covered="True" />
+          <Statement FileIndex="8" Line="19" Column="13" EndLine="19" EndColumn="22" Covered="True" />
+          <Statement FileIndex="8" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="CalclatorTests" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+    <Namespace Name="CalclatorTests" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+      <Type Name="CalculatorTest" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Method Name="CalculateTest(System.String,System.Int32,System.Int32,System.Int32):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="5" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="17" Column="13" EndLine="17" EndColumn="60" Covered="True" />
+          <Statement FileIndex="5" Line="19" Column="13" EndLine="19" EndColumn="39" Covered="True" />
+          <Statement FileIndex="5" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="CalculateTest_result0(System.String,System.Int32,System.Int32,System.Int32):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="5" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="27" Column="13" EndLine="27" EndColumn="60" Covered="True" />
+          <Statement FileIndex="5" Line="29" Column="13" EndLine="29" EndColumn="39" Covered="True" />
+          <Statement FileIndex="5" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ParserTest" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Method Name="isSupportedTests(System.String,System.Boolean):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="3" Line="43" Column="9" EndLine="43" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="44" Column="13" EndLine="44" EndColumn="46" Covered="True" />
+          <Statement FileIndex="3" Line="45" Column="13" EndLine="45" EndColumn="39" Covered="True" />
+          <Statement FileIndex="3" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseTest_result0(System.String[],System.Int32):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="3" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="14" Column="13" EndLine="14" EndColumn="91" Covered="True" />
+          <Statement FileIndex="3" Line="15" Column="13" EndLine="15" EndColumn="39" Covered="True" />
+          <Statement FileIndex="3" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseTest_result1(System.String[],System.Int32):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="3" Line="22" Column="9" EndLine="22" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="23" Column="13" EndLine="23" EndColumn="91" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="13" EndLine="24" EndColumn="39" Covered="True" />
+          <Statement FileIndex="3" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseTest_result2(System.String[],System.Int32):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="3" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="32" Column="13" EndLine="32" EndColumn="91" Covered="True" />
+          <Statement FileIndex="3" Line="33" Column="13" EndLine="33" EndColumn="39" Covered="True" />
+          <Statement FileIndex="3" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ProgramTests" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Method Name="MainTest(System.String[],System.Int32):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="16" Column="13" EndLine="16" EndColumn="45" Covered="True" />
+          <Statement FileIndex="4" Line="19" Column="13" EndLine="19" EndColumn="44" Covered="True" />
+          <Statement FileIndex="4" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Calculator" CoveredStatements="20" TotalStatements="20" CoveragePercent="100">
+    <Namespace Name="Calc" CoveredStatements="20" TotalStatements="20" CoveragePercent="100">
+      <Type Name="Calculator" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Method Name="Calculate(System.String,System.Int32,System.Int32):System.Int32" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="7" Line="4" Column="9" EndLine="4" EndColumn="29" Covered="True" />
+          <Statement FileIndex="7" Line="5" Column="18" EndLine="5" EndColumn="29" Covered="True" />
+          <Statement FileIndex="7" Line="6" Column="18" EndLine="6" EndColumn="29" Covered="True" />
+          <Statement FileIndex="7" Line="7" Column="18" EndLine="7" EndColumn="29" Covered="True" />
+          <Statement FileIndex="7" Line="8" Column="18" EndLine="8" EndColumn="29" Covered="True" />
+          <Statement FileIndex="7" Line="9" Column="16" EndLine="9" EndColumn="17" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="Parser" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+        <Method Name="isSupported(System.String):System.Boolean" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="6" Line="4" Column="9" EndLine="4" EndColumn="29" Covered="True" />
+          <Statement FileIndex="6" Line="5" Column="22" EndLine="5" EndColumn="26" Covered="True" />
+          <Statement FileIndex="6" Line="6" Column="22" EndLine="6" EndColumn="26" Covered="True" />
+          <Statement FileIndex="6" Line="7" Column="22" EndLine="7" EndColumn="26" Covered="True" />
+        </Method>
+        <Method Name="TryParseValues(System.String[],System.Int32,System.Int32,System.String):System.Int32" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="6" Line="11" Column="9" EndLine="11" EndColumn="63" Covered="True" />
+          <Statement FileIndex="6" Line="12" Column="9" EndLine="12" EndColumn="63" Covered="True" />
+          <Statement FileIndex="6" Line="13" Column="9" EndLine="13" EndColumn="30" Covered="True" />
+          <Statement FileIndex="6" Line="14" Column="9" EndLine="14" EndColumn="45" Covered="True" />
+          <Statement FileIndex="6" Line="15" Column="14" EndLine="15" EndColumn="76" Covered="True" />
+          <Statement FileIndex="6" Line="16" Column="14" EndLine="16" EndColumn="15" Covered="True" />
+          <Statement FileIndex="6" Line="17" Column="9" EndLine="17" EndColumn="45" Covered="True" />
+          <Statement FileIndex="6" Line="18" Column="14" EndLine="18" EndColumn="75" Covered="True" />
+          <Statement FileIndex="6" Line="19" Column="14" EndLine="19" EndColumn="15" Covered="True" />
+          <Statement FileIndex="6" Line="20" Column="14" EndLine="20" EndColumn="15" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
