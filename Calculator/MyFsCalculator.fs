@@ -5,6 +5,7 @@ module MyFsCalculator =
     type Valid<'a> =
         | Some of 'a
         | None of string
+        
 
     type ValidBuilder() =
         member this.Bind(x, f) = 
@@ -32,11 +33,13 @@ module MyFsCalculator =
         
     let Calculate (arg1: decimal) (operation: string) (arg2: decimal) =
             match operation with
-            | "+" -> arg1 + arg2
-            | "-" -> arg1 - arg2 
-            | "*" -> arg1 * arg2 
-            | "/" -> arg1 / arg2
-           
+            | "+" -> Some (arg1 + arg2)
+            | "-" -> Some (arg1 - arg2) 
+            | "*" -> Some (arg1 * arg2) 
+            | "/" ->
+                match arg2|>int32 with
+                | 0 -> None "DividingByZero"
+                | _ -> Some ( arg1 / arg2)
     [<EntryPoint>]
     let main args =
         

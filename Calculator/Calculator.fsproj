@@ -7,8 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Calculate.fs" />
-        <Compile Include="Parser.fs" />
         <Compile Include="MyFsCalculator.fs" />
     </ItemGroup>
 
