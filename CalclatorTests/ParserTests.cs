@@ -1,17 +1,18 @@
 ﻿using System.Runtime.InteropServices;
 using Xunit;
 using Calc;
+using static Calc.MyFsCalculator;
 
 namespace CalclatorTests
 {
     public static class ParserTest
     {
         [Theory]
-        [InlineData(new[] {"2", "+", "3"}, 0)]
-        [InlineData(new[] {"6", "-", "4"}, 0)]
+        [InlineData(new[] {"2", "+", "3"}, typeof(Valid<>.Some))]
+        [InlineData(new[] {"6", "-", "4"}, typeof(Valid<>.Some))]
         public static void TryParseTest_result0(string[] args, int expect)
         {
-            var act = Parser.TryParseValues(args, out var arg1, out var arg2, out var op);
+            var act = TryParseArgs(args);
             Assert.Equal(expect, act);
         }
 
@@ -25,11 +26,11 @@ namespace CalclatorTests
         }
 
         [Theory]
-        [InlineData(new[]{"2", "", "2"}, 2)]
+        [InlineData(new[]{"2", "", "2"}, typeof(Valid<string>.None))]
         [InlineData(new[]{"2", "a", "2"}, 2)]
         public static void TryParseTest_result2(string[] args, int expect)
         {
-            var act = Parser.TryParseValues(args, out var arg1, out var arg2, out var op); 
+            var act = TryParseArgs(args); 
             Assert.Equal(expect, act);
         }
 

@@ -1,5 +1,5 @@
-using Xunit;
 using Calc;
+using Xunit;
 
 namespace CalclatorTests
 {
@@ -14,7 +14,7 @@ namespace CalclatorTests
 
         static void CalculateTest(string op, int arg1, int arg2, int expect)
         {
-            var act = Calculator.Calculate(op, arg1, arg2);
+            var act = MyFsCalculator.Calculate(arg1, op, arg2);
 
             Assert.Equal(expect, act);
         }
@@ -24,7 +24,7 @@ namespace CalclatorTests
         [InlineData("", 3, 3, 0)]
         public static void CalculateTest_result0(string op, int arg1, int arg2, int expect)
         {
-            var act = Calculator.Calculate(op, arg1, arg2);
+            var act = MyFsCalculator.Calculate(arg1, op, arg2);
 
             Assert.Equal(expect, act);
         }
