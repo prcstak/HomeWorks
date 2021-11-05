@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Calculator\Calculator.fsproj" />
+      <ProjectReference Include="..\hw6.fsproj" />
     </ItemGroup>
 
 </Project>

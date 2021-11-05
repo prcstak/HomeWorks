@@ -1,7 +1,6 @@
 namespace hw6
 
 open System
-open Calculator
 open Giraffe
 open System.Collections.Generic
 open System.IO
@@ -21,20 +20,15 @@ module Program =
     
     let calculateHandler (arg1:string, op: string, arg2:string) : HttpHandler =
         fun (next : HttpFunc) (ctx : HttpContext) ->
-           let oper = match op with
-            | "plus" -> "+"
-            | "subtract" -> "-"
-            | "multiply"  -> "*"
-            | "divide"  -> "/"
-            | _ -> "?"
-           (arg1+ " " + oper + " " + arg2 + " " + "="+ " " + go [|arg1; op; arg2|]|> text) next ctx
+           (go [|arg1; op; arg2|]|> text) next ctx
             
     let webApp: HttpFunc -> Http.HttpContext -> HttpFuncResult =
         choose [
-            route "/ping"   >=> text "pong"
-            route "/"       >=> htmlFile "/pages/index.html"
-            routef "/calculate/arg1=%s&op=%s&arg2=%s" calculateHandler
-            ]
+            GET >=>
+                choose[
+                    routef "/calculate/arg1=%s&op=%s&arg2=%s" calculateHandler
+                ]
+            setStatusCode 404 >=> text "Not Found" ]
     
     type Startup() =
         member __.ConfigureServices (services : IServiceCollection) =
