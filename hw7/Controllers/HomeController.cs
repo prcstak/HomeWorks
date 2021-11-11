@@ -26,7 +26,7 @@ namespace dotnet_practice10_26.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            return View(new UserProfile());
         }
 
         [HttpPost]
