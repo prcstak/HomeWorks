@@ -1,33 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using WebApplication.Services;
 
 namespace WebApplication.Controllers
 {
     public class CalculatorController : Controller
     {
-        [HttpGet("add")]
-        public IActionResult Plus([FromServices] Calculator calc, decimal arg1, decimal arg2)
+        
+        [HttpGet]
+        public IActionResult Calc()
         {
-            return Content(calc.Add(arg1, arg2));
+            return View();
         }
         
-        [HttpGet("sub")]
-        public IActionResult Sub([FromServices] Calculator calc, decimal arg1, decimal arg2)
+        [HttpPost]
+        public IActionResult Calc([FromServices] Calculator calc, string expression)
         {
-            return Content(calc.Sub(arg1, arg2));
+            ViewBag.Result = calc.Calculate(expression);
+            return View();
         }
         
-        [HttpGet("mult")]
-        public IActionResult Mult([FromServices] Calculator calc, decimal arg1, decimal arg2)
-        {
-            return Content(calc.Mult(arg1, arg2));
-        }
-        
-        [HttpGet("div")]
-        public IActionResult Div([FromServices] Calculator calc, decimal arg1, decimal arg2)
-        {
-            return Content(calc.Div(arg1, arg2));
-        }
         
     }
 

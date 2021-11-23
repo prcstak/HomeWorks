@@ -1,14 +1,38 @@
-﻿namespace WebApplication
+﻿using System;
+using System.Linq.Expressions;
+using System.Reflection.PortableExecutable;
+using System.Threading.Tasks;
+using static WebApplication.Tree.ExpressionTreeBuilder;
+
+namespace WebApplication.Services
 {
     public class Calculator
     {
-        public string Add(decimal arg1, decimal arg2) => $"{arg1 + arg2}";
+        public string Calculate(string expression)
+        {
+            var expressionTree = MakeTree(expression);
+            return CalclateAsync(expressionTree).Result.ToString();
+        }
 
-        public string Sub(decimal arg1, decimal arg2) => $"{arg1 - arg2}";
-        
-        public string Mult(decimal arg1, decimal arg2) => $"{arg1 * arg2}";
-        
-        public string Div(decimal arg1, decimal arg2) => arg2 == 0? "Dividing by zero" : $"{arg1 / arg2}";
-
+        public static async Task<decimal> CalclateAsync(Expression node)
+        {
+            if (node is ConstantExpression constant)
+            { 
+                return await Task.FromResult((decimal) constant.Value);
+            }
+            
+            var binaryNode = (BinaryExpression) node;
+            var left = CalclateAsync(binaryNode.Left);
+            var right = CalclateAsync(binaryNode.Right);
+            Task.WaitAll(left, right);
+            
+            return binaryNode.NodeType switch
+            {
+                ExpressionType.Add => left.Result + right.Result,
+                ExpressionType.Subtract => left.Result + right.Result,
+                ExpressionType.Multiply => left.Result + right.Result,
+                ExpressionType.Divide => left.Result + right.Result,
+            };
+        }
     }
 }
