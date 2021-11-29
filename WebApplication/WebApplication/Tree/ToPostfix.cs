@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace WebApplication.Tree
@@ -9,7 +11,9 @@ namespace WebApplication.Tree
         {
             StringBuilder postFix = new StringBuilder();
             string arrival;
-            var inFix = input.Split(' ');
+            var pre = String.Concat(input.Where(c => !Char.IsWhiteSpace(c)));
+            var inf = string.Join(" ", pre.ToCharArray());
+            var inFix = inf.Split(' ');
             Stack<string> operators = new Stack<string>(); //Creates a new Stack
             foreach (string c in inFix) //Iterates characters in inFix
             {
