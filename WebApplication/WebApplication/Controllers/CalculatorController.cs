@@ -14,7 +14,7 @@ namespace WebApplication.Controllers
         }
         
         [HttpPost]
-        public IActionResult Calc([FromServices] Calculator calc, string expression)
+        public IActionResult Calc([FromServices] ICalculator calc, string expression)
         {
             ViewBag.Result = calc.Calculate(expression);
             return View();

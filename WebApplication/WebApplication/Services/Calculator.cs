@@ -6,7 +6,7 @@ using static WebApplication.Tree.ExpressionTreeBuilder;
 
 namespace WebApplication.Services
 {
-    public class Calculator
+    public class Calculator : ICalculator
     {
         public string Calculate(string expression)
         {
@@ -14,11 +14,12 @@ namespace WebApplication.Services
             return CalclateAsync(expressionTree).Result.ToString();
         }
 
-        public static async Task<decimal> CalclateAsync(Expression node)
+        public async Task<decimal> CalclateAsync(Expression node)
         {
             if (node is ConstantExpression constant)
-            { 
-                return await Task.FromResult((decimal) constant.Value);
+            {
+                if (constant.Value != null) 
+                    return await Task.FromResult((decimal) constant.Value);
             }
             
             var binaryNode = (BinaryExpression) node;
@@ -29,9 +30,9 @@ namespace WebApplication.Services
             return binaryNode.NodeType switch
             {
                 ExpressionType.Add => left.Result + right.Result,
-                ExpressionType.Subtract => left.Result + right.Result,
-                ExpressionType.Multiply => left.Result + right.Result,
-                ExpressionType.Divide => left.Result + right.Result,
+                ExpressionType.Subtract => left.Result - right.Result,
+                ExpressionType.Multiply => left.Result * right.Result,
+                ExpressionType.Divide => left.Result / right.Result,
             };
         }
     }

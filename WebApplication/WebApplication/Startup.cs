@@ -25,7 +25,7 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<Calculator>();
+            services.AddScoped<ICalculator, Calculator>();
 
         }
 
