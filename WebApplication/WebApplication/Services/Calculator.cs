@@ -9,27 +9,21 @@ using static WebApplication.Tree.ExpressionTreeBuilder;
 
 namespace WebApplication.Services
 {
-    public class Calculator : ExpressionVisitor, ICalculator
+    public class Calculator: ICalculator
     {
-        public Dictionary<Expression, Expression[]> Expressions = new();
-        private ICalculator _calculatorImplementation;
-        private Dictionary<Expression, decimal> Cache { get; } = new();
+        private Dictionary<Expression, Expression[]> Expressions { get; set; } = new();
+        public Dictionary<Expression, decimal> Cache { get; } = new();
         
-
-        protected override Expression VisitBinary(BinaryExpression node)
+        public override async Task<string> Calculate(Expression node, Visitor visitor)
         {
-            Expressions[node] = new[] {node.Left, node.Right};
-            Visit(node.Left);
-            Visit(node.Right);
-            return node;
-        }
+            visitor.Visit(node);
+            Expressions = visitor.Nodes;
+            var result = await CalculateAsync(node);
 
-        protected override Expression VisitConstant(ConstantExpression node)
-        {
-            Expressions[node] = Array.Empty<Expression>();
-            return node;
+            return result.ToString();
         }
-
+        
+        
         private Expression[] GetDependencies(Expression expression)
         {
             return Expressions.TryGetValue(expression, out var dependencies)
@@ -67,20 +61,6 @@ namespace WebApplication.Services
                     _                       => Cache[node]
                 };
             }
-        }
-
-        public async Task<decimal> Calculate(Expression node)
-        {
-            Visit(node);
-            var result = await CalculateAsync(node);
-
-            return result;
-        }
-
-        public string Calculate(string expression)
-        {
-            var tree = ExpressionTreeBuilder.MakeTree(expression);
-            return Calculate(tree).Result.ToString();
         }
     }
 }

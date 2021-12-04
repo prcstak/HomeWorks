@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace WebApplication.Services
 {
-    public interface ICalculator 
+    public abstract class ICalculator
     {
-        public string Calculate(string expression);
+        public abstract Task<string> Calculate(Expression node, Visitor visitor);
     }
 }
