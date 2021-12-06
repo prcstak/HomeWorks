@@ -12,7 +12,7 @@ namespace WebApplication.Services
         {
             Calculator = calculator;
         }
-        public override Task<string> Calculate(Expression node, Visitor visitor)
+        public override Task<string> Calculate(Expression node, MyExpressionVisitor visitor)
         {
             return Calculator.Calculate(node, visitor);
         }

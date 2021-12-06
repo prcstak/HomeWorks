@@ -27,7 +27,7 @@ namespace WebApplication.Controllers
         public async Task<IActionResult> Calc(string expression)
         {
             var calc = new CacheCalculator(new Calculator(), Context);
-            var visitor = new Visitor();
+            var visitor = new MyExpressionVisitor();
             var tree = ExpressionTreeBuilder.MakeTree(expression);
             ViewBag.Result = await calc.Calculate(tree, visitor);
             return View();

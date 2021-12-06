@@ -16,7 +16,7 @@ namespace WebApplication.Services
             Context = context;
         }
 
-        public override async Task<string> Calculate(Expression node, Visitor visitor)
+        public override async Task<string> Calculate(Expression node, MyExpressionVisitor visitor)
         {
             var cache = Context.Cache.Find(node.ToString());
             if (cache != null)

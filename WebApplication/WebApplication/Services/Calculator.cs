@@ -14,7 +14,7 @@ namespace WebApplication.Services
         private Dictionary<Expression, Expression[]> Expressions { get; set; } = new();
         public Dictionary<Expression, decimal> Cache { get; } = new();
         
-        public override async Task<string> Calculate(Expression node, Visitor visitor)
+        public override async Task<string> Calculate(Expression node, MyExpressionVisitor visitor)
         {
             visitor.Visit(node);
             Expressions = visitor.Nodes;

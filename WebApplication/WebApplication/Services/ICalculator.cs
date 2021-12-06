@@ -6,6 +6,6 @@ namespace WebApplication.Services
 {
     public abstract class ICalculator
     {
-        public abstract Task<string> Calculate(Expression node, Visitor visitor);
+        public abstract Task<string> Calculate(Expression node, MyExpressionVisitor visitor);
     }
 }
