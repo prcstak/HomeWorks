@@ -1,7 +1,11 @@
-﻿namespace WebApplication.ExceptionHandler
+﻿using System;
+using Microsoft.Extensions.Logging;
+
+namespace WebApplication.ExceptionHandler
 {
-    public class IExceptionHandler
+    public interface IExceptionHandler
     {
-        
+        public void Handle(Exception e);
+        void Aggregate(Exception exception);
     }
 }
