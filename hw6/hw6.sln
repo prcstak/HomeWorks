@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "hw6", "hw6.fsproj", "{60A58914-9B1C-4E18-A3E0-FADC23649B1B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "hw6", "hw6\hw6.fsproj", "{60A58914-9B1C-4E18-A3E0-FADC23649B1B}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Calculator", "Calculator\Calculator.fsproj", "{22EF2194-B913-4FCB-9971-CF1DC557E10B}"
 EndProject
