@@ -3,15 +3,18 @@ using Microsoft.Extensions.Logging;
 
 namespace WebApplication.ExceptionHandler
 {
-    public class ExceptionHandler: IExceptionHandler, IExceptionHandler<Exception>
+    public class CalculatorExceptionHandler: 
+        IExceptionHandler,
+        IExceptionHandler<ArgumentNullException>,
+        IExceptionHandler<DivideByZeroException>,
+        IExceptionHandler<InvalidOperationException>
     {
         private ILogger Logger;
-
-        protected ExceptionHandler(ILogger logger)
+        public CalculatorExceptionHandler(ILogger logger)
         {
             Logger = logger;
         }
-
+        
         public void HandleException<T>(T exception) where T : Exception
         {
             var handler = this as IExceptionHandler<T>;
@@ -29,6 +32,21 @@ namespace WebApplication.ExceptionHandler
         protected virtual void OnFallback(Exception exception)
         {
             Logger.LogError($"Unidentified exception {exception}");
+        }
+        
+        public void Handle(ArgumentNullException e)
+        {
+            Logger.LogError($"ArgumentNullException");
+        }
+
+        public void Handle(DivideByZeroException e)
+        {
+            Logger.LogError($"DivideByZeroException");
+        }
+
+        public void Handle(InvalidOperationException e)
+        {
+            Logger.LogError($"InvalidOperationException");
         }
     }
 }
