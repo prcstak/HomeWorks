@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="58" TotalStatements="77" CoveragePercent="75" ReportType="DetailedXml" DotCoverVersion="2021.2.1">
+<Root CoveredStatements="59" TotalStatements="78" CoveragePercent="76" ReportType="DetailedXml" DotCoverVersion="2021.2.1">
   <FileIndices>
-    <File Index="5" Name="D:\DataStorage_\Programs_\NET\HomeWorks\GiraffeTests\obj\Debug\net5.0\GiraffeTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A29C90EE55E71562E6878D47F3A4B31CF5763D576244AB5FBF07E5035DB62749" />
-    <File Index="4" Name="D:\DataStorage_\Programs_\NET\HomeWorks\GiraffeTests\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="1" Name="D:\DataStorage_\Programs_\NET\HomeWorks\GiraffeTests\obj\Debug\net5.0\GiraffeTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A29C90EE55E71562E6878D47F3A4B31CF5763D576244AB5FBF07E5035DB62749" />
+    <File Index="2" Name="D:\DataStorage_\Programs_\NET\HomeWorks\GiraffeTests\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
     <File Index="3" Name="C:\Users\Marsel\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
-    <File Index="2" Name="D:\DataStorage_\Programs_\NET\HomeWorks\GiraffeTests\WebAppFactory.cs" ChecksumAlgorithm="SHA256" Checksum="49CA35ABBB13BF0D70172F1DE786416BB94C6FEE47EBEDC5103D4096CFDCF3F4" />
-    <File Index="1" Name="D:\DataStorage_\Programs_\NET\HomeWorks\GiraffeTests\UnitTest1.cs" ChecksumAlgorithm="SHA256" Checksum="2A542E0A9BC38A43B84285A451BCDA93644A3A82BDB5C15DF9B2EB6ACA686AAB" />
+    <File Index="4" Name="D:\DataStorage_\Programs_\NET\HomeWorks\GiraffeTests\WebAppFactory.cs" ChecksumAlgorithm="SHA256" Checksum="49CA35ABBB13BF0D70172F1DE786416BB94C6FEE47EBEDC5103D4096CFDCF3F4" />
+    <File Index="5" Name="D:\DataStorage_\Programs_\NET\HomeWorks\GiraffeTests\UnitTest1.cs" ChecksumAlgorithm="SHA256" Checksum="E20F35974F134CC0673FCA8F9C7B86A4D597ACE1F9C68457DE340B349C20E847" />
     <File Index="6" Name="D:\DataStorage_\Programs_\NET\HomeWorks\hw6\Calculator\Program.fs" ChecksumAlgorithm="SHA256" Checksum="2531EC093B655B46E3B45A32480BB370E93BE469F80178537F56814AD2802930" />
     <File Index="7" Name="D:\DataStorage_\Programs_\NET\HomeWorks\hw6\Program.fs" ChecksumAlgorithm="SHA256" Checksum="8807467276311D53E3A3F758D34C40F3596FEA4986DCC540A3192A2F35A61008" />
   </FileIndices>
@@ -118,39 +118,40 @@
       </Type>
     </Namespace>
   </Assembly>
-  <Assembly Name="GiraffeTests" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
-    <Namespace Name="GiraffeTests" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
+  <Assembly Name="GiraffeTests" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
+    <Namespace Name="GiraffeTests" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
       <Type Name="CustomWebApplicationFactory&lt;TStartup&gt;" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
         <Type Name="&lt;&gt;c" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="&lt;CreateHostBuilder&gt;b__0_0(Microsoft.AspNetCore.Hosting.IWebHostBuilder):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="2" Line="15" Column="17" EndLine="15" EndColumn="18" Covered="True" />
-            <Statement FileIndex="2" Line="16" Column="21" EndLine="16" EndColumn="69" Covered="True" />
-            <Statement FileIndex="2" Line="17" Column="17" EndLine="17" EndColumn="18" Covered="True" />
+            <Statement FileIndex="4" Line="15" Column="17" EndLine="15" EndColumn="18" Covered="True" />
+            <Statement FileIndex="4" Line="16" Column="21" EndLine="16" EndColumn="69" Covered="True" />
+            <Statement FileIndex="4" Line="17" Column="17" EndLine="17" EndColumn="18" Covered="True" />
           </Method>
         </Type>
         <Method Name="CreateHostBuilder():Microsoft.Extensions.Hosting.IHostBuilder" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="2" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
-          <Statement FileIndex="2" Line="13" Column="13" EndLine="17" EndColumn="20" Covered="True" />
-          <Statement FileIndex="2" Line="18" Column="13" EndLine="18" EndColumn="28" Covered="True" />
-          <Statement FileIndex="2" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="13" Column="13" EndLine="17" EndColumn="20" Covered="True" />
+          <Statement FileIndex="4" Line="18" Column="13" EndLine="18" EndColumn="28" Covered="True" />
+          <Statement FileIndex="4" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
         </Method>
       </Type>
-      <Type Name="GiraffeTests" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
-        <Type Name="&lt;CheckRightResponse_RightArgs_CorrectAnswer&gt;d__2" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Method Name="MoveNext():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-            <Statement FileIndex="1" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
-            <Statement FileIndex="1" Line="32" Column="13" EndLine="32" EndColumn="50" Covered="True" />
-            <Statement FileIndex="1" Line="36" Column="13" EndLine="37" EndColumn="64" Covered="True" />
-            <Statement FileIndex="1" Line="38" Column="13" EndLine="38" EndColumn="69" Covered="True" />
-            <Statement FileIndex="1" Line="41" Column="13" EndLine="41" EndColumn="44" Covered="True" />
-            <Statement FileIndex="1" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="True" />
+      <Type Name="GiraffeTests" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+        <Type Name="&lt;CheckRightResponse_RightArgs_CorrectAnswer&gt;d__2" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Method Name="MoveNext():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+            <Statement FileIndex="5" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+            <Statement FileIndex="5" Line="28" Column="13" EndLine="28" EndColumn="50" Covered="True" />
+            <Statement FileIndex="5" Line="32" Column="13" EndLine="33" EndColumn="64" Covered="True" />
+            <Statement FileIndex="5" Line="34" Column="13" EndLine="34" EndColumn="69" Covered="True" />
+            <Statement FileIndex="5" Line="36" Column="13" EndLine="36" EndColumn="58" Covered="True" />
+            <Statement FileIndex="5" Line="37" Column="13" EndLine="37" EndColumn="44" Covered="True" />
+            <Statement FileIndex="5" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor(GiraffeTests.CustomWebApplicationFactory&lt;Startup&gt;):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="1" Line="16" Column="9" EndLine="16" EndColumn="82" Covered="True" />
-          <Statement FileIndex="1" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
-          <Statement FileIndex="1" Line="18" Column="13" EndLine="18" EndColumn="32" Covered="True" />
-          <Statement FileIndex="1" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="12" Column="9" EndLine="12" EndColumn="82" Covered="True" />
+          <Statement FileIndex="5" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="14" Column="13" EndLine="14" EndColumn="32" Covered="True" />
+          <Statement FileIndex="5" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>

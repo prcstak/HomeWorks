@@ -1,10 +1,6 @@
-using System.Net;
+using System;
 using System.Threading.Tasks;
 using hw6;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.AspNetCore.TestHost;
-using Microsoft.Extensions.Hosting;
 using Xunit;
 
 namespace GiraffeTests
@@ -19,13 +15,13 @@ namespace GiraffeTests
         }
         
         [Theory]
-        [InlineData("1", "plus", "2", "3")]
-        [InlineData("1", "plus", "2.0", "3,0")]
-        [InlineData("3", "divide", "2.0", "1,5")]
-        [InlineData("2.1", "divide", "7.0", "0,3")]
-        [InlineData("2.1", "subtract", "7.0", "-4,9")]
-        [InlineData("2.1", "multiply", "3", "6,3")]
-        public async Task CheckRightResponse_RightArgs_CorrectAnswer(string arg1, string op, string arg2, string expected)
+        [InlineData("1", "plus", "2", 3)]
+        [InlineData("1", "plus", "2.0", 3.0)]
+        [InlineData("3", "divide", "2.0", 1.5)]
+        [InlineData("2.1", "divide", "7.0", 0.3)]
+        [InlineData("2.1", "subtract", "7.0", -4.9)]
+        [InlineData("2.1", "multiply", "3", 6.3)]
+        public async Task CheckRightResponse_RightArgs_CorrectAnswer(string arg1, string op, string arg2, decimal expected)
         {
             //arrange 
             
@@ -37,8 +33,8 @@ namespace GiraffeTests
                 $"/calculate/arg1={arg1}&op={op}&arg2={arg2}");
             var result = await response.Content.ReadAsStringAsync();
             //assert
-
-            Assert.Equal(result, expected);
+            Decimal.TryParse(result, out decimal decRes);
+            Assert.Equal(decRes, expected);
         }
         
         
