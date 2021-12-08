@@ -30,7 +30,7 @@ namespace WebApplication.Controllers
         [HttpPost]
         public async Task<IActionResult> Calc(string expression)
         {
-            IExceptionHandler handler = new ExceptionHandler.ExceptionHandler(Logger);
+            IExceptionHandler handler = new CalculatorExceptionHandler(Logger);
             var calc = new CacheCalculator(new Calculator(), Context);
             var visitor = new MyExpressionVisitor();
             try
@@ -41,7 +41,7 @@ namespace WebApplication.Controllers
             }
             catch (Exception e)
             {
-                handler.Aggregate(e);
+                handler.HandleException(e);
                 ViewBag.Result = "Check Log";
             }
             return View();

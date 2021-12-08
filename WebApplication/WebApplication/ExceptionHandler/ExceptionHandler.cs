@@ -3,38 +3,32 @@ using Microsoft.Extensions.Logging;
 
 namespace WebApplication.ExceptionHandler
 {
-    public class ExceptionHandler: IExceptionHandler
+    public class ExceptionHandler: IExceptionHandler, IExceptionHandler<Exception>
     {
         private ILogger Logger;
 
-        public ExceptionHandler(ILogger logger)
+        protected ExceptionHandler(ILogger logger)
         {
             Logger = logger;
         }
 
-        public void Aggregate(Exception e)
+        public void HandleException<T>(T exception) where T : Exception
         {
-            Handle((dynamic) e);
+            var handler = this as IExceptionHandler<T>;
+            if(handler != null)
+                handler.Handle(exception);
+            else
+                this.Handle(exception as dynamic);
         }
         
-        public void Handle(Exception e)
+        public void Handle(Exception exception)
         {
-            Logger.LogError($"Unidentified exception {e}");
+            OnFallback(exception);
         }
 
-        public void Handle(ArgumentNullException e)
+        protected virtual void OnFallback(Exception exception)
         {
-            Logger.LogError($"ArgumentNullException");
-        }
-
-        public void Handle(DivideByZeroException e)
-        {
-            Logger.LogError($"DivideByZeroException");
-        }
-
-        public void Handle(InvalidOperationException e)
-        {
-            Logger.LogError($"InvalidOperationException");
+            Logger.LogError($"Unidentified exception {exception}");
         }
     }
 }

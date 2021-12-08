@@ -5,7 +5,11 @@ namespace WebApplication.ExceptionHandler
 {
     public interface IExceptionHandler
     {
-        public void Handle(Exception e);
-        void Aggregate(Exception exception);
+        void HandleException<T>(T exception) where T : Exception;
+    }
+
+    public interface IExceptionHandler<T> where T : Exception
+    {
+        void Handle(T exception);
     }
 }
