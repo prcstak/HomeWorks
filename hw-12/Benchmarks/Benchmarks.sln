@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarks", "Benchmarks.csproj", "{D6563953-0FF1-44F9-8D80-5AD3CFE15F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "..\ASP NETCore\WebApplication.csproj", "{100C2EAD-9158-44E1-B700-EC2025067CA3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "hw6", "..\Giraffe\hw6\hw6.fsproj", "{56DB08D4-2D4E-4551-9D79-FE6387CBE2A3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Calculator", "..\Giraffe\Calculator\Calculator.fsproj", "{F6110092-CEC9-4FC0-BEF9-69F4EC6091C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6563953-0FF1-44F9-8D80-5AD3CFE15F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6563953-0FF1-44F9-8D80-5AD3CFE15F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6563953-0FF1-44F9-8D80-5AD3CFE15F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6563953-0FF1-44F9-8D80-5AD3CFE15F89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100C2EAD-9158-44E1-B700-EC2025067CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100C2EAD-9158-44E1-B700-EC2025067CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100C2EAD-9158-44E1-B700-EC2025067CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100C2EAD-9158-44E1-B700-EC2025067CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DB08D4-2D4E-4551-9D79-FE6387CBE2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DB08D4-2D4E-4551-9D79-FE6387CBE2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DB08D4-2D4E-4551-9D79-FE6387CBE2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DB08D4-2D4E-4551-9D79-FE6387CBE2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6110092-CEC9-4FC0-BEF9-69F4EC6091C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6110092-CEC9-4FC0-BEF9-69F4EC6091C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6110092-CEC9-4FC0-BEF9-69F4EC6091C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6110092-CEC9-4FC0-BEF9-69F4EC6091C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
