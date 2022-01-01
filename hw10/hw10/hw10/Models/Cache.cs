@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
 
-namespace WebApplication.Models
+namespace hw10.Models
 {
     public class Cache
     {

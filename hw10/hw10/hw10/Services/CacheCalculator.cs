@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using WebApplication.Models;
+using hw10.Models;
 
-namespace WebApplication.Services
+namespace hw10.Services
 {
     public class CacheCalculator: CalculatorDecorator
     {

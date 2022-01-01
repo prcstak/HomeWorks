@@ -4,10 +4,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection.PortableExecutable;
 using System.Threading.Tasks;
-using WebApplication.Tree;
-using static WebApplication.Tree.ExpressionTreeBuilder;
+using hw10.Tree;
+using static hw10.Tree.ExpressionTreeBuilder;
 
-namespace WebApplication.Services
+namespace hw10.Services
 {
     public class Calculator: ICalculator
     {

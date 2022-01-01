@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace WebApplication.Services
+namespace hw10.Services
 {
     public class Visitor: ExpressionVisitor
     {

@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using WebApplication.Models;
+using hw10.Models;
 
-namespace WebApplication.Migrations
+namespace hw10.Migrations
 {
     [DbContext(typeof(CalculatorContext))]
     [Migration("20211205093923_InitialCreate")]
@@ -20,7 +20,7 @@ namespace WebApplication.Migrations
                 .HasAnnotation("ProductVersion", "5.0.10")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-            modelBuilder.Entity("WebApplication.Models.Cache", b =>
+            modelBuilder.Entity("hw10.Models.Cache", b =>
                 {
                     b.Property<string>("Expression")
                         .HasColumnType("text");

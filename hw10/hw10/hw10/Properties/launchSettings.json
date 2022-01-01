@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "WebApplication": {
+    "hw10": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

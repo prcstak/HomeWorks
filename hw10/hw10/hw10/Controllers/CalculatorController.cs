@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using WebApplication.Models;
-using WebApplication.Services;
-using WebApplication.Tree;
+using hw10.Models;
+using hw10.Services;
+using hw10.Tree;
 
-namespace WebApplication.Controllers
+namespace hw10.Controllers
 {
     public class CalculatorController : Controller
     {

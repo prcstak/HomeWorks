@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WebApplication.Models;
-using WebApplication.Services;
+using hw10.Models;
+using hw10.Services;
 
-namespace WebApplication
+namespace hw10
 {
     public class Startup
     {

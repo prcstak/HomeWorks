@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace WebApplication.Tree
+namespace hw10.Tree
 {
     public static class ExpressionTreeBuilder
     {

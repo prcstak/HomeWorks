@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace WebApplication.Services
+namespace hw10.Services
 {
     public abstract class ICalculator
     {
