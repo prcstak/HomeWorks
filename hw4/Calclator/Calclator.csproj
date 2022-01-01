@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\IL\IL.ilproj" />
+      <ProjectReference Include="..\Calculator\Calculator.fsproj" />
     </ItemGroup>
 
 </Project>

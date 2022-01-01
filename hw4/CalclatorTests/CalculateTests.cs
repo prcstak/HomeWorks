@@ -1,7 +1,7 @@
-﻿using NUnit.Framework;
 using Xunit;
+using Calc;
 
-namespace hw1.tests
+namespace CalclatorTests
 {
     public static class CalculatorTest
     {
@@ -16,7 +16,7 @@ namespace hw1.tests
         {
             var act = Calculator.Calculate(op, arg1, arg2);
 
-            Assert.AreEqual(expect, act);
+            Assert.Equal(expect, act);
         }
 
         [Xunit.Theory]
@@ -26,7 +26,7 @@ namespace hw1.tests
         {
             var act = Calculator.Calculate(op, arg1, arg2);
 
-            Assert.AreEqual(expect, act);
+            Assert.Equal(expect, act);
         }
     }
 }

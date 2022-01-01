@@ -1,7 +1,8 @@
-﻿using Xunit;
-using IL;
+﻿using System.Runtime.InteropServices;
+using Xunit;
+using Calc;
 
-namespace hw.tests
+namespace CalclatorTests
 {
     public static class ParserTest
     {
@@ -31,5 +32,17 @@ namespace hw.tests
             var act = Parser.TryParseValues(args, out var arg1, out var arg2, out var op); 
             Assert.Equal(expect, act);
         }
+
+        [Theory]
+        [InlineData("+", true)]
+        [InlineData("-", true)]
+        [InlineData("/", true)]
+        [InlineData("*", true)]
+        [InlineData("a", false)]
+        public static void isSupportedTests(string op, bool expect)
+        {
+            var act = Parser.isSupported(op);
+            Assert.Equal(expect, act);
+        }
     }
-} 
+}

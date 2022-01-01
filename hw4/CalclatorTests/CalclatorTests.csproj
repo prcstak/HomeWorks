@@ -20,8 +20,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\hw2\hw2.csproj" />
-      <ProjectReference Include="..\IL\IL.ilproj" />
+      <ProjectReference Include="..\Calclator\Calclator.csproj" />
+      <ProjectReference Include="..\Calculator\Calculator.fsproj" />
     </ItemGroup>
 
 </Project>
