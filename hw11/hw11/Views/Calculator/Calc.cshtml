@@ -1,0 +1,21 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <input type="text" name="expression"/>
+        <input type="submit" value="Calculate"/>
+    </form>
+    <h3>@ViewBag.Result</h3>
+    <a asp-controller="Home" asp-action="Index">hf</a>
+</div>
+</body>
+</html>
