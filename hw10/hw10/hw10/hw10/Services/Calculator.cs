@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reflection.PortableExecutable;
 using System.Threading.Tasks;
-using hw10.Tree;
-using static hw10.Tree.ExpressionTreeBuilder;
 
-namespace hw10.Services
+namespace hw10.hw10.Services
 {
     public class Calculator: ICalculator
     {

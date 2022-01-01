@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using hw10.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using hw10.Models;
 
-namespace hw10.Controllers
+namespace hw10.hw10.Controllers
 {
     public class HomeController : Controller
     {

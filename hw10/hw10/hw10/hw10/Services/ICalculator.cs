@@ -1,8 +1,7 @@
-﻿using System;
-using System.Linq.Expressions;
+﻿using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace hw10.Services
+namespace hw10.hw10.Services
 {
     public abstract class ICalculator
     {
