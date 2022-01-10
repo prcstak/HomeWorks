@@ -1,0 +1,36 @@
+﻿@using System.Collections
+@model UserInput
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Hero</h2>
+<div class="row">
+@using (Html.BeginForm())
+{
+    
+    <div class="form-group col-6">
+        @Html.EditorForModel()
+        <br/>
+        <input class="btn-outline-success" type="submit" value="бой"/>
+    </div>
+}
+@{
+    var log = ViewData["Log"] as Log;
+}
+
+@if (log != null)
+{
+    <div class="col-6">
+        <div>
+            <p>Лог битвы:</p>
+        </div>
+        @foreach (var v in log.steps)
+        {
+            <p>@v</p>
+        }
+    </div>
+}
+</div>
